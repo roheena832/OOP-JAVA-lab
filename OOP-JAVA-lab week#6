@@ -1,0 +1,44 @@
+class Book {
+   
+    private String title;
+    private String author;
+    private String isbn;
+
+  public String getTitle() {
+        return title;
+    }
+
+ public void setTitle(String title) {
+        this.title = title;
+    }
+ public String getAuthor() {
+        return author;
+    }
+
+ public void setAuthor(String author) {
+        this.author = author;
+    }
+public String getIsbn() {
+        return isbn;
+    }
+
+ public void setIsbn(String isbn) {
+    this.isbn = isbn;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        //object
+      Book myBook = new Book();
+
+   myBook.setTitle("forty rules of love");
+    System.out.println("Title: " + myBook.getTitle());
+               
+   myBook.setAuthor("Elam Shafaq");
+   System.out.println("Author: " + myBook.getAuthor());
+          
+   myBook.setIsbn("9780743273565");
+    System.out.println("ISBN: " + myBook.getIsbn());
+
+}
+}
